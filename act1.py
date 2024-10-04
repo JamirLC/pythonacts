@@ -1,4 +1,4 @@
-def problem_one():
+def problem_1():
   students = {'John', 'Maria', 'David', 'Samantha'} 
   
   while True:
@@ -24,7 +24,7 @@ def problem_one():
     except IndexError as ie:
       print(f'Error: {ie}\n')
 
-def problem_two():
+def problem_2():
   numbers = (1, 4, 7, 10, 13, 16)
   sum_of_even = 0
   
@@ -35,7 +35,7 @@ def problem_two():
   average = sum_of_even / len(numbers)
   print(f'The average of even numbers in the tuple is {average:.2f}')
 
-def problem_three():
+def problem_3():
   people = {'users':
             {
              'John': 19,
@@ -51,7 +51,7 @@ def problem_three():
         print(f'Name: {user}')
 
 
-def problem_four():
+def problem_4():
   numbers = (1, 3, 2, 4, 3, 1, 2, 5, 10)
     
   for i in range(len(numbers)):
@@ -70,7 +70,7 @@ def problem_four():
       if count > 1:
            print(f'{numbers[i]} appeared in the tuple {count} times')
 
-def problem_five():
+def problem_5():
   student_scores = [('John', 85), ('Maria', 92), ('Tom', 76), ('Sarah', 90)]
   lowest_score = student_scores[0]
   
@@ -81,16 +81,16 @@ def problem_five():
       
  
 def divider():
-  print("=" * 50)
+  print("/" * 30)
   print()
   
 def main():
   print("Select a problem to solve (1-5):")
-  print("1: Problem One")
-  print("2: Problem Two")
-  print("3: Problem Three")
-  print("4: Problem Four")
-  print("5: Problem Five")
+  print("1: Problem 1")
+  print("2: Problem 2")
+  print("3: Problem 3")
+  print("4: Problem 4")
+  print("5: Problem 5")
   print()
 
   while True:
@@ -106,36 +106,23 @@ def main():
     except ValueError as ve:
       print(f"Invalid input: {ve}. Please enter an integer between 1 and 5.")
       divider()
-    """
-    match choice:
-      case 1:
-        problem_one()
-      case 2:
-        problem_two()
-      case 3:
-        problem_three()
-      case 4:
-        problem_four()
-      case 5:
-        problem_five()
-    """
         
         
   if choice == 1:
     divider()
-    problem_one()
+    problem_1()
   elif choice == 2:
     divider()
-    problem_two()
+    problem_2()
   elif choice == 3:
     divider()
-    problem_three()
+    problem_3()
   elif choice == 4:
     divider()
-    problem_four()
+    problem_4()
   elif choice == 5:
     divider()
-    problem_five()
+    problem_5()
     
 if __name__ == "__main__":
     main()        
